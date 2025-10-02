@@ -1,1 +1,21 @@
+# Создание словаря (хеш-таблицы)
+hash_table = {}
 
+# Добавление элементов
+hash_table["apple"] = 5
+hash_table["banana"] = 3
+hash_table["orange"] = 7
+
+# Получение значения
+print(f"Apple count: {hash_table['apple']}")
+
+# Проверка наличия ключа
+if "banana" in hash_table:
+    print("Banana exists!")
+
+# Итерация по элементам
+for key, value in hash_table.items():
+    print(f"{key}: {value}")
+
+# Альтернативный способ создания
+hash_table2 = {"apple": 5, "banana": 3, "orange": 7}
